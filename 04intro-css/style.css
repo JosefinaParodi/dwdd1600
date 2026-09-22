@@ -1,0 +1,196 @@
+/* ===== Glow Hair Salon ===== */
+/* Main page styling */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3E342D;
+    background-color: #F7F1E8;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* ===== Header ===== */
+
+header {
+    background-color: #8A7463;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header span {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.5rem 0 0;
+}
+
+
+/* ===== Navigation ===== */
+
+nav {
+    background-color: #3E342D;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 1.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* Shows which page the visitor is currently viewing */
+
+nav a.active {
+    background-color: #8A7463;
+    color: #FFFFFF;
+}
+
+
+/* Changes links when the mouse moves over them */
+
+nav a:hover {
+    background-color: #DCCDBE;
+    color: #3E342D;
+}
+
+
+/* ===== Main Content ===== */
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border: 2px solid #DCCDBE;
+    border-radius: 12px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #3E342D;
+    margin-top: 0;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3E342D;
+    margin-top: 2rem;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/* ===== Content Links ===== */
+
+main a {
+    color: #3E342D;
+    font-weight: 600;
+}
+
+main a:hover {
+    color: #8A7463;
+    text-decoration: underline;
+}
+
+
+/* ===== Lists ===== */
+
+ul:not(nav ul) {
+    list-style-type: square;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+ol {
+    list-style-type: upper-roman;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* ===== Definition List ===== */
+
+dl {
+    background-color: #DCCDBE;
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    border: 2px solid #8A7463;
+    border-radius: 10px;
+}
+
+dt {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #3E342D;
+    margin-top: 0.75rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+
+/* ===== Address ===== */
+
+address {
+    background-color: #DCCDBE;
+    padding: 1rem;
+    border: 2px solid #8A7463;
+    border-radius: 10px;
+    font-style: normal;
+}
+
+
+/* ===== Footer ===== */
+
+footer {
+    background-color: #8A7463;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
