@@ -1,0 +1,406 @@
+/* ===== Glow Hair Salon — Module 7 Advanced CSS ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3E342D;
+    background-color: #F7F1E8;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Keep each major page region centered and within the same maximum width. */
+header,
+nav,
+main,
+footer {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== Header / Site Logo ===== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1.25rem 1rem;
+    color: #FFFFFF;
+    background: linear-gradient(120deg, #8A7463, #B7A18E);
+}
+
+.site-logo {
+    display: block;
+    width: 80px;
+    height: 80px;
+    flex: 0 0 auto;
+}
+
+.header-copy {
+    min-width: 0;
+}
+
+header span {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.5rem 0 0;
+}
+
+/* ===== Responsive Navigation ===== */
+nav {
+    background-color: #3E342D;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.75rem 1.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a.active,
+nav a[aria-current="page"] {
+    background-color: #8A7463;
+    color: #FFFFFF;
+    box-shadow: inset 0 -4px 0 #DCCDBE;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: #DCCDBE;
+    color: #3E342D;
+}
+
+/* ===== Hero Image ===== */
+.hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: clamp(220px, 38vw, 420px);
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+/* ===== Main Content ===== */
+main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border: 2px solid #DCCDBE;
+    border-radius: 12px;
+}
+
+h1,
+h2 {
+    font-family: "Playfair Display", serif;
+    color: #3E342D;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+main a {
+    color: #3E342D;
+    font-weight: 600;
+}
+
+main a:hover,
+main a:focus-visible {
+    color: #8A7463;
+    text-decoration: underline;
+}
+
+ul:not(nav ul) {
+    list-style-type: square;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+ol {
+    list-style-type: upper-roman;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+dl {
+    background-color: #DCCDBE;
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    border: 2px solid #8A7463;
+    border-radius: 10px;
+}
+
+dt {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #3E342D;
+    margin-top: 0.75rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+address {
+    background-color: #DCCDBE;
+    padding: 1rem;
+    border: 2px solid #8A7463;
+    border-radius: 10px;
+    font-style: normal;
+}
+
+/* ===== Home Page Image ===== */
+.home-image {
+    float: right;
+    width: 40%;
+    max-width: 300px;
+    margin: 0 0 1rem 2rem;
+}
+
+.home-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home-image figcaption {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* ===== Gallery ===== */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery figure {
+    width: min(300px, 100%);
+    margin: 0;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.gallery img:hover,
+.gallery img:focus-visible {
+    box-shadow: 0 8px 18px rgba(62, 52, 45, 0.3);
+    transform: translateY(-3px);
+}
+
+.gallery figcaption {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #8A7463;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Tablet and desktop: horizontal navigation. */
+@media screen and (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/* Small phones: reduce content padding and keep the header comfortable. */
+@media screen and (max-width: 420px) {
+    header {
+        gap: 0.75rem;
+        padding: 1rem 0.75rem;
+    }
+
+    .site-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    header p {
+        font-size: 0.85rem;
+    }
+
+    main {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 1.25rem;
+        border-radius: 0;
+    }
+
+    .home-image {
+        float: none;
+        width: 100%;
+        max-width: none;
+        margin: 0 0 1rem;
+    }
+}
+
+
+/* ===== Appointment Form ===== */
+
+form {
+    max-width: 700px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+fieldset {
+    border: 2px solid #DCCDBE;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #F7F1E8;
+}
+
+legend {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3E342D;
+    padding: 0 0.5rem;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+    color: #3E342D;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #B7A18E;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    color: #3E342D;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    margin-right: 0.5rem;
+    accent-color: #8A7463;
+}
+
+form label:has(input[type="checkbox"]),
+form label:has(input[type="radio"]) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 2px solid #8A7463;
+    outline-offset: 2px;
+}
+
+form button[type="submit"] {
+    padding: 0.9rem 1.5rem;
+    border: 2px solid #3E342D;
+    border-radius: 8px;
+    background-color: #8A7463;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #3E342D;
+}

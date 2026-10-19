@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Josefina Parodi">
+    <meta name="description" content="Request a personalized hair appointment at Glow Hair Salon.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Appointment | Glow Hair Salon</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="site-logo" src="../logo.svg" alt="Glow Hair Salon logo" width="80" height="80">
+        <div class="header-copy">
+            <span>Glow Hair Salon</span>
+            <p>Beautiful Hair, made for you.</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
+            <li><a class="active" aria-current="page" href="appointment.html">Appointment</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Plan Your Perfect Hair Appointment</h1>
+
+        <p>
+            Every great hair transformation starts with a plan.
+            Tell us about your hair, your style, and what you hope
+            to achieve at Glow Hair Salon.
+        </p>
+
+        <form action="thanks.html" method="GET">
+
+            <fieldset>
+                <legend>Your Contact Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname"
+                    placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                    placeholder="you@example.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                    placeholder="385-555-1234" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Hair Goals</legend>
+
+                <p>What would you like to focus on during your visit?</p>
+
+                <label for="color">
+                    <input type="checkbox" id="color" name="goals" value="Hair Color">
+                    Refresh my hair color
+                </label>
+
+                <label for="highlights">
+                    <input type="checkbox" id="highlights" name="goals" value="Highlights">
+                    Add highlights or balayage
+                </label>
+
+                <label for="extensions">
+                    <input type="checkbox" id="extensions" name="goals" value="Extensions">
+                    Add length or volume with extensions
+                </label>
+
+                <label for="cut">
+                    <input type="checkbox" id="cut" name="goals" value="Haircut">
+                    Try a new haircut
+                </label>
+
+                <label for="styling">
+                    <input type="checkbox" id="styling" name="goals" value="Styling">
+                    Get styling for a special occasion
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Appointment Preferences</legend>
+
+                <p>Which time of day usually works best for you?</p>
+
+                <label for="morning">
+                    <input type="radio" id="morning" name="time" value="Morning" required>
+                    Morning
+                </label>
+
+                <label for="afternoon">
+                    <input type="radio" id="afternoon" name="time" value="Afternoon">
+                    Afternoon
+                </label>
+
+                <label for="evening">
+                    <input type="radio" id="evening" name="time" value="Evening">
+                    Evening
+                </label>
+
+                <label for="budget">What is your approximate service budget?</label>
+                <select id="budget" name="budget">
+                    <option value="">Choose your budget</option>
+                    <option value="Under $75">Under $75</option>
+                    <option value="$75-$150">$75-$150</option>
+                    <option value="$150-$250">$150-$250</option>
+                    <option value="$250 or more">$250 or more</option>
+                </select>
+
+                <label for="hairdetails">Describe Your Dream Hair:</label>
+                <textarea id="hairdetails" name="hairdetails" rows="5"
+                    placeholder="Tell us about your current hair, inspiration, or questions."></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Appointment Request</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Glow Hair Salon. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
