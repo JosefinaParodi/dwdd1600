@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Josefina Parodi">
+    <meta name="description" content="Explore Glow Hair Salon media, services, and a downloadable salon brochure.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Hair Salon - Media</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img class="site-logo" src="logo.svg" alt="Glow Hair Salon logo" width="80" height="80">
+        <div class="header-copy">
+            <span>Glow Hair Salon</span>
+            <p>Beautiful Hair, made for you.</p>
+        </div>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a class="active" aria-current="page" href="media.html">Media</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Glow Hair Salon Media</h1>
+
+        <p>
+            Explore hair-color inspiration, learn about our services,
+            and save a copy of our salon brochure.
+        </p>
+
+        <section aria-labelledby="video-heading">
+            <h2 id="video-heading">Hair Color Inspiration</h2>
+            <p>
+                Watch a balayage and foiling demonstration for inspiration
+                before your next color consultation.
+            </p>
+
+            <div class="video-frame">
+                <iframe
+                    src="https://www.youtube.com/embed/vHPPHRFMj_0"
+                    title="Balayage hair color technique demonstration"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section aria-labelledby="audio-heading">
+            <h2 id="audio-heading">A Welcome from Glow Hair Salon</h2>
+            <p>
+                Listen to our short salon welcome message.
+            </p>
+
+            <audio controls preload="none">
+                <source src="glow-intro.ogg" type="audio/ogg">
+                <source src="glow-intro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section aria-labelledby="brochure-heading">
+            <h2 id="brochure-heading">Salon Brochure</h2>
+            <p>Keep our service overview handy for your next visit.</p>
+            <p>
+                <a class="download-link" href="brochure.pdf" target="_blank" rel="noopener">
+                    Open the Glow Hair Salon Services Brochure (PDF)
+                </a>
+            </p>
+        </section>
+
+        <section aria-labelledby="services-heading">
+            <h2 id="services-heading">Service Overview</h2>
+            <p>
+                Use this quick guide to compare some of our most requested services.
+                Final pricing depends on hair length, thickness, color history, and consultation.
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <caption>Glow Hair Salon service guide</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Service</th>
+                            <th scope="col">Typical Appointment</th>
+                            <th scope="col">Starting Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Haircut and Styling</td>
+                            <td>45–60 minutes</td>
+                            <td>$45</td>
+                        </tr>
+                        <tr>
+                            <td>All-over Color</td>
+                            <td>90–120 minutes</td>
+                            <td>$85</td>
+                        </tr>
+                        <tr>
+                            <td>Partial Highlights</td>
+                            <td>90–150 minutes</td>
+                            <td>$110</td>
+                        </tr>
+                        <tr>
+                            <td>Full Highlights / Balayage</td>
+                            <td>2–3 hours</td>
+                            <td>$150</td>
+                        </tr>
+                        <tr>
+                            <td>Hair Extensions Consultation</td>
+                            <td>30 minutes</td>
+                            <td>Complimentary</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="project-note">
+                These prices are illustrative school-project examples,
+                not actual salon quotes.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Glow Hair Salon. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
